@@ -128,7 +128,7 @@ LOCAL_MODULE_OWNER := invensense
 endif
 endif
 else    # eng, user, & userdebug builds
-LOCAL_MODULE := sensors.invensense
+LOCAL_MODULE := sensors.$(TARGET_DEVICE)
 endif   # eng, user & userdebug builds
 $(info YD>>LOCAL_MODULE=$(LOCAL_MODULE))
 
