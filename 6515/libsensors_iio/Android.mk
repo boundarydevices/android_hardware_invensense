@@ -22,7 +22,7 @@ LOCAL_MODULE := libinvensense_hal
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := invensense
 
-LOCAL_CFLAGS := -DLOG_TAG=\"Sensors\" -Werror -Wall
+LOCAL_CFLAGS := -DLOG_TAG=\"Sensors\"
 
 # ANDROID version check
 $(info YD>>PLATFORM_VERSION=$(PLATFORM_VERSION))
@@ -146,7 +146,7 @@ LOCAL_C_INCLUDES += $(LOCAL_PATH)/software/core/driver/include
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/software/core/driver/include/linux
 
 LOCAL_MODULE_TAGS := optional
-LOCAL_CFLAGS := -DLOG_TAG=\"Sensors\" -Werror -Wall
+LOCAL_CFLAGS := -DLOG_TAG=\"Sensors\"
 
 ifeq ($(VERSION_KK),true)
 LOCAL_CFLAGS += -DANDROID_KITKAT
