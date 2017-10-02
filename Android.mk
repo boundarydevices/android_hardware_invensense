@@ -2,7 +2,7 @@
 ifneq ($(filter hammerhead, $(TARGET_DEVICE)),)
 # hammerhead expects 65xx sensors.
 include $(call all-named-subdir-makefiles,65xx)
-else ifneq ($(filter guppy dory cid, $(TARGET_DEVICE)),)
+else ifneq ($(filter guppy dory cid cid_tab, $(TARGET_DEVICE)),)
 # dory and guppy expect 6515 sensors.
 include $(call all-named-subdir-makefiles,6515)
 endif
