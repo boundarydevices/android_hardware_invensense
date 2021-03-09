@@ -5,4 +5,6 @@ include $(call all-named-subdir-makefiles,65xx)
 else ifneq ($(filter guppy dory, $(TARGET_DEVICE)),)
 # dory and guppy expect 6515 sensors.
 include $(call all-named-subdir-makefiles,6515)
+else
+include $(call all-named-subdir-makefiles,iam20680)
 endif
